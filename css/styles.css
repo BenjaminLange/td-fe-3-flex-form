@@ -1,0 +1,148 @@
+/***********************
+Page elements
+***********************/
+
+body,
+h1,
+h2 {
+    margin: 0;
+    font-family: 'Merriweather', serif;
+}
+
+hr {
+    height: 2px;
+    margin: .25em 1em;
+    border: none;
+    background-color: black;
+}
+
+.double-line {
+    height: 4px;
+}
+
+form {
+    /* display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; */
+}
+
+/*******************************
+Page header and form header
+*******************************/
+
+.page-header {
+    display: flex;
+    background-color: #3f4a5b;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    height: 8em;
+    font-size: .65em;
+}
+
+.page-title {
+    justify-content: center;
+    flex: 1;
+    margin: auto;
+}
+
+.form-header {
+    display: flex;
+    flex-direction: column;
+    color: #3f4a5b;
+    text-align: center;
+    font-size: .8em;
+}
+
+.form-title {
+    flex: 1;
+    margin-top: 1em;
+    margin-bottom: .5em;
+}
+
+.form-description {
+    color: #a4a8ad;
+    margin: 0 1em 2em 1em;
+}
+
+/***********************
+   Form elements
+***********************/
+
+fieldset {
+    border-style: none;
+    margin: 1em 0;
+}
+
+legend {
+    padding-left: 0;
+    color: #3f4a5b;
+    font-weight: bold;
+    font-size: 1.25em;
+    margin-bottom: 1em;
+}
+
+label {
+    color: #3f4a5b;
+    display: inline-block;
+    font-weight: 200;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel],
+select,
+textarea {
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #eeeeee;
+    border-radius: .25em;
+    border-style: none;
+    margin: .5em 0 1em 0;
+    padding: 1em 1.5em;
+}
+
+input[type=checkbox],
+input[type=radio] {
+    margin: .25em .5em .5em 0;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: #3f4a5b;
+    border-style: solid;
+    border-color: #3f4a5b;
+}
+
+#zip {
+    width: 50%;
+}
+
+textarea {
+    height: 7em;
+}
+
+.submit {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    background-color: #22c9b5;
+    color: white;
+    border-radius: .25em;
+    border-style: none;
+    height: 2.5em;
+    font-size: 1.25em;
+    width: 90%;
+}
+
+.footer {
+    text-align: center;
+    color: #a4a8ad;
+    margin: 2em 0;
+    font-style: italic;
+}
