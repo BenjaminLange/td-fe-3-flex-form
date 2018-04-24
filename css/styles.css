@@ -96,7 +96,6 @@ input[type=tel],
 select,
 textarea {
     box-sizing: border-box;
-    width: 100%;
     background-color: #eeeeee;
     border-radius: .25em;
     border-style: none;
@@ -130,14 +129,15 @@ textarea {
     justify-content: center;
 }
 
-button {
+.button {
     background-color: #22c9b5;
     color: white;
     border-radius: .25em;
     border-style: none;
     height: 2.5em;
     font-size: 1.25em;
-    width: 90%;
+    flex: 1;
+    margin: .5em;
 }
 
 .footer {
@@ -145,4 +145,42 @@ button {
     color: #a4a8ad;
     margin: 2em 0;
     font-style: italic;
+}
+
+.label-input,
+.label-select {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.label-input > input,
+.label-input > select {
+    flex: 1;
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    
+    .label-input {
+        flex-direction: row;
+    }
+
+    .label-input > label {
+        flex: 1;
+        align-self: center;
+    }
+
+    .label-input > input,
+    .label-input > select {
+        flex: 4;
+    }
+
+    #zip {
+        max-width: 12em;
+    }
 }
