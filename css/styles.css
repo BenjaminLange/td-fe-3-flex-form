@@ -147,17 +147,22 @@ textarea {
     font-style: italic;
 }
 
-.label-input,
-.label-select {
+.contact-input,
+.contact-select {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: stretch;
 }
 
-.label-input > input,
-.label-input > select {
+.contact-input > input,
+.contact-input > select {
     flex: 1;
+}
+
+.label-input {
+    display: flex;
+    flex-direction: column;
 }
 
 @media (min-width: 768px) {
@@ -166,21 +171,22 @@ textarea {
         margin: 0 auto;
     }
     
-    .label-input {
+    .contact-input {
         flex-direction: row;
     }
 
-    .label-input > label {
+    .contact-input > label {
         flex: 1;
         align-self: center;
     }
 
-    .label-input > input,
-    .label-input > select {
+    .contact-input > input,
+    .contact-input > select {
         flex: 4;
     }
 
     #zip {
         max-width: 12em;
+        margin-right: auto;
     }
 }
