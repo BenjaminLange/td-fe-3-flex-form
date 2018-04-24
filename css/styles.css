@@ -11,21 +11,13 @@ h2 {
 
 hr {
     height: 2px;
-    margin: .25em 1em;
+    margin: .25em 0;
     border: none;
     background-color: black;
 }
 
 .double-line {
     height: 4px;
-}
-
-form {
-    /* display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center; */
 }
 
 /*******************************
@@ -67,6 +59,11 @@ Page header and form header
     margin: 0 1em 2em 1em;
 }
 
+
+.container {
+    margin: 1em;
+}
+
 /***********************
    Form elements
 ***********************/
@@ -74,6 +71,7 @@ Page header and form header
 fieldset {
     border-style: none;
     margin: 1em 0;
+    padding: 0;
 }
 
 legend {
@@ -117,7 +115,7 @@ select:focus {
 }
 
 #zip {
-    width: 50%;
+    width: 12em;
 }
 
 textarea {
@@ -137,7 +135,6 @@ textarea {
     height: 2.5em;
     font-size: 1.25em;
     flex: 1;
-    margin: .5em;
 }
 
 .footer {
@@ -186,7 +183,6 @@ textarea {
     }
 
     #zip {
-        max-width: 12em;
-        margin-right: auto;
+        flex: 0 0 12em;
     }
 }
