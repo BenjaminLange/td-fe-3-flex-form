@@ -88,6 +88,14 @@ label {
     font-weight: 200;
 }
 
+select {
+    color: #a4a8ad;
+}
+
+option:not(:checked) {
+    color: black;
+}
+
 input[type=text],
 input[type=email],
 input[type=tel],
@@ -95,10 +103,12 @@ select,
 textarea {
     box-sizing: border-box;
     background-color: #eeeeee;
+    border-color: transparent;
     border-radius: .25em;
-    border-style: none;
+    border-style: solid;
     margin: .5em 0 1em 0;
     padding: 1em 1.5em;
+    transition: border .5s ease;
 }
 
 input[type=checkbox],
@@ -106,12 +116,25 @@ input[type=radio] {
     margin: .25em .5em .5em 0;
 }
 
+input[type=checkbox]:focus,
+input[type=radio]:focus {
+    outline: 1px solid #3f4a5b;
+}
+
 input:focus,
 textarea:focus,
 select:focus {
+    outline: none;
     border-color: #3f4a5b;
     border-style: solid;
-    border-color: #3f4a5b;
+
+    transition: border .5s ease;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #a4a8ad;
+    text-align: right;
 }
 
 #zip {
@@ -165,11 +188,11 @@ textarea {
 
 @media (min-width: 768px) {
     .page {
-        margin: 0 auto;
+        margin: 0 1em;
     }
     .container {
         max-width: 900px;
-        margin: 0 1em;
+        margin: 0 auto;
     }
     
     .contact-input,
