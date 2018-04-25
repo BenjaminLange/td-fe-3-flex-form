@@ -145,7 +145,8 @@ textarea {
 }
 
 .contact-input,
-.contact-select {
+.contact-select,
+.zip-input {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -163,26 +164,28 @@ textarea {
 }
 
 @media (min-width: 768px) {
-    .container {
-        max-width: 900px;
+    .page {
         margin: 0 auto;
     }
+    .container {
+        max-width: 900px;
+        margin: 0 1em;
+    }
     
-    .contact-input {
+    .contact-input,
+    .zip-input {
         flex-direction: row;
     }
 
-    .contact-input > label {
-        flex: 1;
+    .contact-input > label,
+    .zip-input > label {
+        flex: 0 0 12em;
         align-self: center;
     }
 
     .contact-input > input,
-    .contact-input > select {
+    .contact-input > select,
+    .zip-input > .zip-text {
         flex: 4;
-    }
-
-    #zip {
-        flex: 0 0 12em;
     }
 }
