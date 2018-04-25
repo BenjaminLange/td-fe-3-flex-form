@@ -13,7 +13,7 @@ hr {
     height: 2px;
     margin: .25em 0;
     border: none;
-    background-color: black;
+    background-color: #000;
 }
 
 .double-line {
@@ -23,6 +23,10 @@ hr {
 /*******************************
 Page header and form header
 *******************************/
+
+.page {
+    background-color: #77818F;
+}
 
 .page-header {
     display: flex;
@@ -61,7 +65,7 @@ Page header and form header
 
 
 .container {
-    margin: 1em;
+    margin: 0 1em;
 }
 
 /***********************
@@ -109,6 +113,7 @@ textarea {
     margin: .5em 0 1em 0;
     padding: 1em 1.5em;
     transition: border .5s ease;
+    transition: background-color .5s ease;
 }
 
 input[type=checkbox],
@@ -127,8 +132,10 @@ select:focus {
     outline: none;
     border-color: #3f4a5b;
     border-style: solid;
-
     transition: border .5s ease;
+    transition: background-color .5s ease;
+    background-color: #3f4a5b;
+    color: #fff;
 }
 
 input::placeholder,
@@ -151,8 +158,9 @@ textarea {
 }
 
 .button {
-    background-color: #22c9b5;
-    color: white;
+    /* background-color: #22c9b5; */
+    background-color: #3f4a5b;
+    color: #fff;
     border-radius: .25em;
     border-style: none;
     height: 2.5em;
@@ -163,7 +171,7 @@ textarea {
 .footer {
     text-align: center;
     color: #a4a8ad;
-    margin: 2em 0;
+    padding: 2em 0;
     font-style: italic;
 }
 
@@ -188,7 +196,7 @@ textarea {
 
 @media (min-width: 768px) {
     .page {
-        margin: 0 1em;
+        padding: 0 1em;
     }
     .container {
         max-width: 900px;
